@@ -29,7 +29,10 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/test_folder_2/Page_S
 
 WebUI.click(findTestObject('Object Repository/test_folder_2/Page_Sk i ATEKST/input_Endre sk_searchButtonBot'))
 
-for (def index : (0..1)) {
+for (def outer_index : (0..3)) {
+
+
+for (def inner_index : (0..1)) {
     WebUI.click(findTestObject('Object Repository/test_folder_3/Page_Retriever Research hydro Sourc/div_0 (1)'))
 
     WebUI.click(findTestObject('Object Repository/test_folder_3/Page_Retriever Research hydro Sourc/a_Alle p siden (1)'))
@@ -40,7 +43,7 @@ for (def index : (0..1)) {
 WebUI.click(findTestObject('test_folder_3/Page_Retriever Research hydro Sourc/i_Ingen_icon reticon-download (1)'))
 
 WebUI.waitForElementVisible(findTestObject('test_folder_3/Page_Retriever Research hydro Sourc/iframe_concat(id(  fancybox-fr'), 
-    2)
+    10)
 
 WebUI.click(findTestObject('Object Repository/test_folder_3/Page_Retriever Research hydro Sourc/span_Ren tekst'))
 
@@ -64,4 +67,4 @@ WebUI.click(findTestObject('test_folder_3/Page_Retriever Research hydro Sourc/di
 WebUI.click(findTestObject('Object Repository/test_folder_3/Page_Retriever Research hydro Sourc/a_Ingen (1)'))
 
 WebUI.click(findTestObject('Object Repository/test_folder_3/Page_Retriever Research hydro Sourc/a_Neste side (1)'))
-
+}
